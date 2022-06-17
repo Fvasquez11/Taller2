@@ -1,9 +1,9 @@
 <script setup>
-import TheWelcome from '@/components/TheWelcome.vue'
+import Gato from '@/components/Gato.vue'
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <Gato />
   </main>
 </template>
