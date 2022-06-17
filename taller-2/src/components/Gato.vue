@@ -32,7 +32,7 @@ export default {
       <b-button @click="reset" variant="outline-dark" size="lg">Reset</b-button>
     </div>
     <div class="container" style="width: 15%;">
-      <div class="row">
+      <div class="row" style="height: 10vh;">
         <div class="col-4 p-0">
           <b-button class="w-100 h-100" @click="changeState(0, 0, 0)" :disabled="gatoStore.disabled[0]" variant="outline-dark" size="lg">
             {{ gatoStore.matrixState[0][0] }}</b-button>
@@ -46,7 +46,7 @@ export default {
             {{ gatoStore.matrixState[0][2] }}</b-button>
         </div>
       </div>
-      <div class="row">
+      <div class="row" style="height: 10vh;">
         <div class="col-4 p-0">
           <b-button class="w-100 h-100" @click="changeState(1, 0, 3)" :disabled="gatoStore.disabled[3]" variant="outline-dark" size="lg">
             {{ gatoStore.matrixState[1][0] }}</b-button>
@@ -60,7 +60,7 @@ export default {
             {{ gatoStore.matrixState[1][2] }}</b-button>
         </div>
       </div>
-      <div class="row">
+      <div class="row" style="height: 10vh;">
         <div class="col-4 p-0">
           <b-button class="w-100 h-100" @click="changeState(2, 0, 6)" :disabled="gatoStore.disabled[6]" variant="outline-dark" size="lg">
             {{ gatoStore.matrixState[2][0] }}</b-button>
