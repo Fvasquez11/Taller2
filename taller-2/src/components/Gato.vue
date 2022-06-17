@@ -17,6 +17,7 @@ export default {
     changeState: function (x, y, id) {
       this.gatoStore.changeState(x, y)
       this.gatoStore.disabled[id] = true
+      this.gatoStore.checkWinner()
     },
     reset: function () {
       this.gatoStore.reset()
@@ -27,7 +28,7 @@ export default {
 
 <template>
   <main>
-    <div>
+    <div class="head">
       <h1>Gato</h1>
       <b-button @click="reset" variant="outline-dark" size="lg">Reset</b-button>
     </div>
@@ -77,6 +78,18 @@ export default {
     </div>
   </main>
 </template>
+
+<style>
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  gap: 50px;
+  flex-flow: column wrap;
+}
+</style>
 
 <!-- <style>
 main {
